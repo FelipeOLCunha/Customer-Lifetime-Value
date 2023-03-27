@@ -1,0 +1,16 @@
+data <- read.csv('customer_eval.csv')
+
+data$Totalprice = data$Quantity * data$UnitPrice
+
+#Calculate the average price spent by a costumer
+meanTotalPrice <- mean(data$Totalprice, na.rm=TRUE)
+
+#Suppose 1 buy per week since 2010
+annualFrequence <- 1 * 52 
+annualRevenue <- meanTotalPrice * annualFrequence
+lifeTimeOfCustomer <- 13
+
+CLV <- annualRevenue * lifeTimeOfCustomer
+CLV
+
+
