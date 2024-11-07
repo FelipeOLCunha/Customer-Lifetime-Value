@@ -37,13 +37,14 @@ pip install pandas numpy matplotlib seaborn
 ## Usage
 
 1. Clone the repository or download the project files.
-2. Open `Customer_Order_Analysis.ipynb` in Jupyter Notebook.
-3. Run each cell sequentially to reproduce the analysis and visualizations.
+2. Ensure `orders.csv` is in the project directory. This file contains the raw data used for analysis.
+3. Open `Customer_Order_Analysis.ipynb` in Jupyter Notebook.
+4. Run each cell sequentially to reproduce the analysis and visualizations.
 
 ## Project Structure
 
 - **Customer_Order_Analysis.ipynb**: The main notebook containing the data analysis and visualizations.
-- **data/**: Directory for raw and processed data files (not included here; ensure data is in the correct format as specified in the notebook).
+- **orders.csv**: The dataset containing customer order data for analysis.
 - **README.md**: Project documentation.
 
 ## Results
